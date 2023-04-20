@@ -14,19 +14,28 @@
 </template>
 
 <script lang="ts">
+interface Person {
+    id: Number,
+    name?: String,
+    age?: Number
+};
 interface Product {
     id: Number,
     name: String
 };
 
-export default {
+import { defineComponent } from 'vue'
+export default defineComponent({
   name: "TsTest",
     data() {
         return {
-            result: []
+            result: [] as Product[],
         }
     },
     mounted() {
+      const some:Person = {
+          id: 1,
+      };
       const apiResult:Product[] = [
           {
               id: 123,
@@ -39,7 +48,7 @@ export default {
       ];
       this.result = apiResult;
     }
-}
+})
 </script>
 
 <style lang="scss" module>
