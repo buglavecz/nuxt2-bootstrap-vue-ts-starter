@@ -1,4 +1,6 @@
-# nuxt-bootstrap
+# nuxt 2 typescript starter pack
+
+Info: https://typescript.nuxtjs.org/
 
 ## Build Setup
 
