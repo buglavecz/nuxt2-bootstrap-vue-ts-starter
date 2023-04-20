@@ -1,4 +1,6 @@
-export default {
+import type { NuxtConfig } from '@nuxt/types'
+
+const config: NuxtConfig = {
     telemetry: false, //https://github.com/nuxt/telemetry
 
     // Global page headers: https://go.nuxtjs.dev/config-head
@@ -32,6 +34,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+      '@nuxt/typescript-build'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -55,3 +58,5 @@ export default {
 
   }
 }
+
+export default config
