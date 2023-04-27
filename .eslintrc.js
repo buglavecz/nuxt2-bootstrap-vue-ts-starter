@@ -13,7 +13,7 @@ module.exports = {
     rules: {
         'no-extra-boolean-cast': 0,
         'vue/multi-word-component-names': ['error', {
-            'ignores': [
+            ignores: [
                 'Default',
                 'Index',
             ]
