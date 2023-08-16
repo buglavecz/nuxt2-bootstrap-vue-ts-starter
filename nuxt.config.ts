@@ -36,6 +36,7 @@ const config: NuxtConfig = {
     buildModules: [
         '@nuxt/typescript-build',
         '@nuxtjs/composition-api/module',
+        ['@pinia/nuxt', { disableVuex: true }],
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
