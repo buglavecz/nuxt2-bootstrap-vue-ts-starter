@@ -8,7 +8,7 @@
     <br>
     <hr>
     <br>
-    user: {{ user }}
+    user : {{ user }}
     <br>
     JSON.stringify: {{ JSON.stringify(user) }}
     <br><br>
